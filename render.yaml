@@ -7,7 +7,7 @@ databases:
 
 services:
   - type: web
-    name: fibonacci_api_db
+    name: guro_fibonacci_api
     env: python
     region: singapore
     buildCommand: './build.sh'
