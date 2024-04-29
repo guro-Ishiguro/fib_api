@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from rest_framework import status
+from django.core.exceptions import ValidationError
 from rest_framework.views import APIView
 from rest_framework.response import Response
 
@@ -19,9 +20,14 @@ def calc_fbi(n):
     return result
 
 
-class FbiViewSet(APIView):
+class FibViewSet(APIView):
     def get(self, request):
-        fbi_index = request.GET.get("n", "")
-        fbi_index = int(fbi_index)
-        result = calc_fbi(fbi_index)
+        fib_index = request.GET.get("n", "")
+        try:
+            fib_index = int(fib_index)
+            if fib_index < 1:
+                return Response({"result":"Bad request."}, status=status.HTTP_400_BAD_REQUEST)
+        except ValueError:
+            return Response({"result":"Bad request."}, status=status.HTTP_400_BAD_REQUEST)
+        result = calc_fbi(fib_index)
         return Response({"result": result})

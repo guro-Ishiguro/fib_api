@@ -3,5 +3,5 @@ from . import views
 
 
 urlpatterns = [
-    path("fbi", views.FbiViewSet.as_view()),
+    path("fib", views.FibViewSet.as_view()),
 ]
