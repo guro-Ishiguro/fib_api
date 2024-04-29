@@ -1,9 +1,9 @@
 databases:
-  - name: django_render_db
+  - name: fibonacci_api
     region: singapore
     plan: free
     databaseName: django_render_db
-    user: django_user
+    user: guro
 
 services:
   - type: web
