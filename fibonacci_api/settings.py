@@ -12,20 +12,22 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 
 from pathlib import Path
 import os
-import environ
+from dotenv import load_dotenv
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-env = environ.Env()
-env.read_env(os.path.join(BASE_DIR, ".env"))
+load_dotenv()
 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = env("SECREST_KEY")
+SECRET_KEY = os.getenv(
+    "SECRET_KEY",
+    "django-insecure-(!qqrk_(!im_m6h6*wnt4q2sxrovqx172^d6hqs_@*^shw5z5v"
+)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -129,6 +131,6 @@ STATIC_URL = "static/"
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 
-SUPERUSER_NAME = env("SUPERUSER_NAME")
-SUPERUSER_EMAIL = env("SUPERUSER_EMAIL")
-SUPERUSER_PASSWORD = env("SUPERUSER_PASSWORD")
+SUPERUSER_NAME = os.getenv("SUPERUSER_NAME")
+SUPERUSER_EMAIL = os.getenv("SUPERUSER_EMAIL")
+SUPERUSER_PASSWORD = os.getenv("SUPERUSER_PASSWORD")
