@@ -30,7 +30,7 @@ SECRET_KEY = env("SECREST_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1', 'fibonacci_api.onrender.com']
+ALLOWED_HOSTS = ['127.0.0.1', 'guro_fibonacci_api.onrender.com']
 
 
 # Application definition
