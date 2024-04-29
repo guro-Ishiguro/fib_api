@@ -28,9 +28,9 @@ env.read_env(os.path.join(BASE_DIR, ".env"))
 SECRET_KEY = "django-insecure-(!qqrk_(!im_m6h6*wnt4q2sxrovqx172^d6hqs_@*^shw5z5v"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1', 'fibonacci_api.onrender.com']
 
 
 # Application definition
