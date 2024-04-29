@@ -1,5 +1,5 @@
 databases:
-  - name: fibonacci_api
+  - name: django_render_db
     region: singapore
     plan: free
     databaseName: django_render_db
