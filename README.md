@@ -10,14 +10,8 @@
 .
 ├── .env
 ├── .gitignore
-├── .venv
-│   ├── bin
-│   ├── include
-│   ├── lib
-│   └── pyvenv.cfg
 ├── README.md
 ├── build.sh
-├── db.sqlite3
 ├── fibonacci_api
 │   ├── __init__.py
 │   ├── asgi.py

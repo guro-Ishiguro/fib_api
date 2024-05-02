@@ -1,6 +1,4 @@
 from django.test import TestCase, Client
-from rest_framework.test import APIRequestFactory
-from ..views import FibViewSet
 
 
 class APIViewTests(TestCase):
