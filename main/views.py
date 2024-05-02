@@ -19,6 +19,10 @@ def calc_fbi(n):
     return result
 
 
+def index(request):
+    return render(request, 'main/index.html', {})
+
+
 class FibViewSet(APIView):
     def get(self, request):
         fib_index = request.GET.get("n", "")
