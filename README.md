@@ -4,6 +4,39 @@
 
 フィボナッチ数列を返す API
 
+### 構成
+
+.
+├── .env
+├── .gitignore
+├── .venv
+│   ├── bin
+│   ├── include
+│   ├── lib
+│   └── pyvenv.cfg
+├── README.md
+├── build.sh
+├── db.sqlite3
+├── fibonacci_api
+│   ├── __init__.py
+│   ├── asgi.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+├── main
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── management
+│   ├── models.py
+│   ├── templates
+│   ├── tests
+│   ├── urls.py
+│   └── views.py
+├── manage.py
+├── render.yaml
+└── requirements.txt
+
 ### 環境
 
 | 言語・フレームワーク  | バージョン |
