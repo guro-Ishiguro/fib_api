@@ -6,6 +6,7 @@
 
 ### 構成
 
+<pre>
 .
 ├── .env
 ├── .gitignore
@@ -36,6 +37,7 @@
 ├── manage.py
 ├── render.yaml
 └── requirements.txt
+</pre>
 
 ### 環境
 
