@@ -26,9 +26,9 @@
 │   ├── management
 │   ├── models.py
 │   ├── templates
-│   ├── tests
-│   ├── urls.py
-│   └── views.py
+│   ├── tests # 単体テスト
+│   ├── urls.py # ルーティング
+│   └── views.py # ビュー
 ├── manage.py
 ├── render.yaml
 └── requirements.txt
