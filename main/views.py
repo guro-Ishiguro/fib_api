@@ -20,7 +20,7 @@ def calc_fbi(n):
 
 
 def index(request):
-    return render(request, 'main/index.html', {})
+    return render(request, "main/index.html", {})
 
 
 class FibViewSet(APIView):
