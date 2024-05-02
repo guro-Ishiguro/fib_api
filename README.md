@@ -12,6 +12,7 @@
 ├── .gitignore
 ├── README.md
 ├── build.sh
+├── db.sqlite3
 ├── fibonacci_api
 │   ├── __init__.py
 │   ├── asgi.py
@@ -43,11 +44,11 @@
 
 ### ローカルでのプロジェクトの作成と起動
 
-```
+```bash
 pip install requirements.txt
 ```
 
-```
+```bash
 python3 manage.py runserver
 ```
 
