@@ -45,10 +45,9 @@
 ### ローカルでのプロジェクトの作成と起動
 
 ```bash
+git clone https://github.com/guro-Ishiguro/fib_api.git
+cd fibonacci_api
 pip install -r requirements.txt
-```
-
-```bash
 python3 manage.py runserver
 ```
 
